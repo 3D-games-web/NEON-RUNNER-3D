@@ -1,0 +1,51 @@
+/* [project]/app/globals.css [app-client] (css) */
+body {
+  color: #fff;
+  background: #080b20;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+}
+
+#hud {
+  z-index: 2;
+  -webkit-user-select: none;
+  user-select: none;
+  background: #05081ebf;
+  border: 1px solid #ffffff40;
+  border-radius: 12px;
+  padding: 12px 16px;
+  line-height: 1.6;
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  box-shadow: 0 0 20px #00dcff2e;
+}
+
+#message {
+  z-index: 3;
+  text-align: center;
+  pointer-events: none;
+  text-shadow: 0 0 18px #00d9ff;
+  place-items: center;
+  font-size: clamp(24px, 5vw, 52px);
+  font-weight: bold;
+  display: grid;
+  position: fixed;
+  inset: 0;
+}
+
+#message small {
+  text-shadow: none;
+  color: #c7eaff;
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: normal;
+  display: block;
+}
+
+/*# sourceMappingURL=app_globals_css_1igg3k2._.single.css.map*/

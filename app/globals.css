@@ -1,0 +1,48 @@
+ 
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: #080b20;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+
+    canvas {
+      display: block;
+    }
+
+    #hud {
+      position: fixed;
+      top: 18px;
+      left: 18px;
+      z-index: 2;
+      padding: 12px 16px;
+      border: 1px solid rgba(255,255,255,.25);
+      border-radius: 12px;
+      background: rgba(5, 8, 30, .75);
+      box-shadow: 0 0 20px rgba(0, 220, 255, .18);
+      line-height: 1.6;
+      user-select: none;
+    }
+
+    #message {
+      position: fixed;
+      inset: 0;
+      z-index: 3;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      pointer-events: none;
+      font-size: clamp(24px, 5vw, 52px);
+      font-weight: bold;
+      text-shadow: 0 0 18px #00d9ff;
+    }
+
+    #message small {
+      display: block;
+      margin-top: 12px;
+      font-size: 16px;
+      font-weight: normal;
+      text-shadow: none;
+      color: #c7eaff;
+    }
