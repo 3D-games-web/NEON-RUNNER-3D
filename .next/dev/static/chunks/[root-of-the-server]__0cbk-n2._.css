@@ -136,53 +136,120 @@
 }
 
 /* [project]/app/globals.css [app-client] (css) */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100%;
+  margin: 0;
+}
+
 body {
   color: #fff;
+  font-family: var(--font-geist-sans), sans-serif;
   background: #080b20;
-  margin: 0;
-  font-family: Arial, sans-serif;
   overflow: hidden;
 }
 
-canvas {
+button {
+  font: inherit;
+}
+
+.game-shell, .game-canvas {
+  position: fixed;
+  inset: 0;
+}
+
+.game-canvas canvas {
   display: block;
 }
 
-#hud {
+.hud {
   z-index: 2;
   -webkit-user-select: none;
   user-select: none;
-  background: #05081ebf;
-  border: 1px solid #ffffff40;
-  border-radius: 12px;
-  padding: 12px 16px;
-  line-height: 1.6;
+  background: #05081ec2;
+  border: 1px solid #7de8ff59;
+  border-radius: 10px;
+  min-width: 230px;
+  padding: 16px 18px;
   position: fixed;
-  top: 18px;
-  left: 18px;
-  box-shadow: 0 0 20px #00dcff2e;
+  top: 22px;
+  left: 22px;
+  box-shadow: 0 0 26px #00dcff33;
 }
 
-#message {
+.eyebrow {
+  color: #7de8ff;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.eyebrow span {
+  color: #ffdf35;
+}
+
+.hud-stats {
+  color: #b9c6e7;
+  gap: 26px;
+  font-size: 13px;
+  display: flex;
+}
+
+.hud-stats strong {
+  color: #fff;
+  margin-top: 3px;
+  font-size: 23px;
+  display: block;
+}
+
+.controls {
+  color: #9aa9cf;
+  margin: 14px 0 0;
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+.message {
   z-index: 3;
-  text-align: center;
-  pointer-events: none;
+  color: #fff;
+  cursor: pointer;
   text-shadow: 0 0 18px #00d9ff;
-  place-items: center;
-  font-size: clamp(24px, 5vw, 52px);
-  font-weight: bold;
+  background: #04061833;
+  border: 0;
+  place-content: center;
+  gap: 12px;
   display: grid;
   position: fixed;
   inset: 0;
 }
 
-#message small {
-  text-shadow: none;
+.message strong {
+  text-transform: uppercase;
+  font-size: clamp(34px, 7vw, 72px);
+}
+
+.message span {
   color: #c7eaff;
-  margin-top: 12px;
-  font-size: 16px;
-  font-weight: normal;
-  display: block;
+  text-shadow: none;
+  font-size: 14px;
+}
+
+@media (max-width: 520px) {
+  .hud {
+    min-width: 190px;
+    padding: 13px 14px;
+    top: 14px;
+    left: 14px;
+  }
+
+  .controls {
+    font-size: 10px;
+  }
 }
 
 /*# sourceMappingURL=%5Broot-of-the-server%5D__0cbk-n2._.css.map*/

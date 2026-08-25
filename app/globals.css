@@ -1,48 +1,57 @@
- 
-    body {
-      margin: 0;
-      overflow: hidden;
-      background: #080b20;
-      font-family: Arial, sans-serif;
-      color: white;
-    }
+* { box-sizing: border-box; }
 
-    canvas {
-      display: block;
-    }
+html, body { margin: 0; min-height: 100%; }
 
-    #hud {
-      position: fixed;
-      top: 18px;
-      left: 18px;
-      z-index: 2;
-      padding: 12px 16px;
-      border: 1px solid rgba(255,255,255,.25);
-      border-radius: 12px;
-      background: rgba(5, 8, 30, .75);
-      box-shadow: 0 0 20px rgba(0, 220, 255, .18);
-      line-height: 1.6;
-      user-select: none;
-    }
+body {
+  overflow: hidden;
+  background: #080b20;
+  color: #fff;
+  font-family: var(--font-geist-sans), sans-serif;
+}
 
-    #message {
-      position: fixed;
-      inset: 0;
-      z-index: 3;
-      display: grid;
-      place-items: center;
-      text-align: center;
-      pointer-events: none;
-      font-size: clamp(24px, 5vw, 52px);
-      font-weight: bold;
-      text-shadow: 0 0 18px #00d9ff;
-    }
+button { font: inherit; }
 
-    #message small {
-      display: block;
-      margin-top: 12px;
-      font-size: 16px;
-      font-weight: normal;
-      text-shadow: none;
-      color: #c7eaff;
-    }
+.game-shell, .game-canvas { position: fixed; inset: 0; }
+.game-canvas canvas { display: block; }
+
+.hud {
+  position: fixed;
+  top: 22px;
+  left: 22px;
+  z-index: 2;
+  min-width: 230px;
+  padding: 16px 18px;
+  border: 1px solid rgba(125, 232, 255, .35);
+  border-radius: 10px;
+  background: rgba(5, 8, 30, .76);
+  box-shadow: 0 0 26px rgba(0, 220, 255, .2);
+  user-select: none;
+}
+
+.eyebrow { margin: 0 0 12px; color: #7de8ff; font-size: 12px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.eyebrow span { color: #ffdf35; }
+.hud-stats { display: flex; gap: 26px; font-size: 13px; color: #b9c6e7; }
+.hud-stats strong { display: block; margin-top: 3px; color: #fff; font-size: 23px; }
+.controls { margin: 14px 0 0; color: #9aa9cf; font-size: 11px; line-height: 1.65; }
+
+.message {
+  position: fixed;
+  inset: 0;
+  z-index: 3;
+  display: grid;
+  place-content: center;
+  gap: 12px;
+  border: 0;
+  background: rgba(4, 6, 24, .2);
+  color: #fff;
+  cursor: pointer;
+  text-shadow: 0 0 18px #00d9ff;
+}
+
+.message strong { font-size: clamp(34px, 7vw, 72px); text-transform: uppercase; }
+.message span { color: #c7eaff; font-size: 14px; text-shadow: none; }
+
+@media (max-width: 520px) {
+  .hud { top: 14px; left: 14px; min-width: 190px; padding: 13px 14px; }
+  .controls { font-size: 10px; }
+}

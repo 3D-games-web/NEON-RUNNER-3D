@@ -1,26 +1,5 @@
-{"timestamp":"00:00:03.261","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:09.580","source":"Server","level":"LOG","message":"○ Compiling / ..."}
-{"timestamp":"00:00:13.603","source":"Browser","level":"WARN","message":"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."}
-{"timestamp":"00:00:13.741","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\\u001b[39m\" \"\\u001b[2m(app/page.tsx:79:19)\\u001b[22m\""}
-{"timestamp":"00:00:13.742","source":"Browser","level":"WARN","message":"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."}
-{"timestamp":"00:00:13.769","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\\u001b[39m\" \"\\u001b[2m(app/page.tsx:79:19)\\u001b[22m\""}
-{"timestamp":"00:02:05.107","source":"Server","level":"LOG","message":"✓ Compiled in 155ms"}
-{"timestamp":"00:05:28.982","source":"Server","level":"LOG","message":"✓ Compiled in 86ms"}
-{"timestamp":"00:05:29.511","source":"Server","level":"WARN","message":"⚠ Fast Refresh had to perform a full reload due to a runtime error."}
-{"timestamp":"00:07:15.674","source":"Browser","level":"WARN","message":"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."}
-{"timestamp":"00:07:15.681","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\\u001b[39m\" \"\\u001b[2m(app/page.tsx:79:19)\\u001b[22m\""}
-{"timestamp":"00:07:15.681","source":"Browser","level":"WARN","message":"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."}
-{"timestamp":"00:07:15.682","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\\u001b[39m\" \"\\u001b[2m(app/page.tsx:79:19)\\u001b[22m\""}
-{"timestamp":"00:30:02.220","source":"Server","level":"LOG","message":"✓ Compiled in 77ms"}
-{"timestamp":"00:30:10.801","source":"Server","level":"LOG","message":"✓ Compiled in 38ms"}
-{"timestamp":"02:04:49.088","source":"Browser","level":"WARN","message":"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."}
-{"timestamp":"02:04:49.161","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\\u001b[39m\" \"\\u001b[2m(app/page.tsx:79:19)\\u001b[22m\""}
-{"timestamp":"02:04:49.162","source":"Browser","level":"WARN","message":"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."}
-{"timestamp":"02:04:49.175","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\\u001b[39m\" \"\\u001b[2m(app/page.tsx:79:19)\\u001b[22m\""}
-{"timestamp":"02:04:54.409","source":"Browser","level":"WARN","message":"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."}
-{"timestamp":"02:04:54.420","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\\u001b[39m\" \"\\u001b[2m(app/page.tsx:79:19)\\u001b[22m\""}
-{"timestamp":"02:04:54.420","source":"Browser","level":"WARN","message":"THREE.Clock: This module has been deprecated. Please use THREE.Timer instead."}
-{"timestamp":"02:04:54.428","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mTHREE.Clock: This module has been deprecated. Please use THREE.Timer instead.\\u001b[39m\" \"\\u001b[2m(app/page.tsx:79:19)\\u001b[22m\""}
-{"timestamp":"02:42:16.980","source":"Server","level":"LOG","message":"✓ Compiled in 231ms"}
-{"timestamp":"02:54:51.872","source":"Browser","level":"ERROR","message":"./app/page.tsx:1:1\nError: Expression expected\n> 1 | <!doctype html>\n    | ^\n  2 | <html lang=\"en\">\n  3 | <head>\n  4 |   <meta charset=\"UTF-8\" />\n\nParsing ecmascript source code failed\n\nImport traces:\n  Client Component Browser:\n    ./app/page.tsx [Client Component Browser]\n    ./app/page.tsx [Server Component]\n\n  Client Component SSR:\n    ./app/page.tsx [Client Component SSR]\n    ./app/page.tsx [Server Component] "}
-{"timestamp":"02:54:51.876","source":"Server","level":"ERROR","message":"[browser] \"./app/page.tsx:1:1\\nError: Expression expected\\n> 1 | <!doctype html>\\n    | ^\\n  2 | <html lang=\\\"en\\\">\\n  3 | <head>\\n  4 |   <meta charset=\\\"UTF-8\\\" />\\n\\nParsing ecmascript source code failed\\n\\nImport traces:\\n  Client Component Browser:\\n    ./app/page.tsx [Client Component Browser]\\n    ./app/page.tsx [Server Component]\\n\\n  Client Component SSR:\\n    ./app/page.tsx [Client Component SSR]\\n    ./app/page.tsx [Server Component]\" \"\""}
+{"timestamp":"00:00:01.589","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:11.494","source":"Browser","level":"WARN","message":"THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead."}
+{"timestamp":"00:00:11.567","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.\\u001b[39m\" \"\\u001b[2m(app/page.tsx:209:16)\\u001b[22m\""}
+{"timestamp":"00:00:44.372","source":"Browser","level":"WARN","message":"THREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead."}
+{"timestamp":"00:00:44.373","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mTHREE.WebGLShadowMap: PCFSoftShadowMap has been deprecated. Using PCFShadowMap instead.\\u001b[39m\" \"\\u001b[2m(app/page.tsx:209:16)\\u001b[22m\""}
