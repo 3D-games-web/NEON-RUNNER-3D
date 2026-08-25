@@ -1,38 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Neon Runner 3D
+
+A small 3D platform runner built with Next.js, React, and Three.js. Move the neon player across floating platforms, collect coins, avoid moving enemies, and reach the finish flag.
+
+## Features
+
+- Real-time Three.js scene with lighting, shadows, fog, and animated stars
+- Platform collision and jumping physics
+- Collectible coins and score tracking
+- Three lives with automatic respawn after a fall or enemy collision
+- Moving enemies and a finish flag
+- Win and game-over states with keyboard or click-to-restart behavior
+- Responsive full-screen canvas with a compact HUD
+
+## Controls
+
+| Action | Keys |
+| --- | --- |
+| Move left | `A` or `Left Arrow` |
+| Move right | `D` or `Right Arrow` |
+| Jump | `W`, `Up Arrow`, or `Space` |
+| Restart after winning or losing | Any key or click the message |
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in a browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create an optimized build and start it locally:
 
-## Learn More
+```bash
+npm run build
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+Run the linter with:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run lint
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Project Structure
 
-## Deploy on Vercel
+- `app/page.tsx` contains the client-side game scene, animation loop, controls, physics, and HUD state.
+- `app/globals.css` contains the full-screen canvas, HUD, and game-over/win overlay styles.
+- `app/layout.tsx` provides the root layout and Geist fonts.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Implementation Notes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# ThreeBoilerplate
-# NEON-RUNNER-3D
+The game is initialized inside a React `useEffect` because Three.js requires browser APIs. The effect also removes keyboard and resize listeners, cancels the animation frame, disposes the renderer, and removes the canvas during cleanup.
