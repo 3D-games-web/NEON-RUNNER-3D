@@ -1,5 +1,8 @@
 # Neon Runner 3D
 
+![Uploading Screenshot 2026-08-25 at 4.58.44 PM.png…]()
+
+
 A small 3D platform runner built with Next.js, React, and Three.js. Move the neon player across floating platforms, collect coins, avoid moving enemies, and reach the finish flag.
 
 ## Features
